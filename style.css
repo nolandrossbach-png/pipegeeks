@@ -114,16 +114,36 @@ img{ max-width:100%; display:block; }
 .cc-title{ font-weight:700; }
 .cc-sub{ color:var(--muted); }
 
-.contact-form{
-  background:#fff; padding:18px; border:1px solid #e2e8f0; border-radius:14px;
-}
-.contact-form label{ display:block; margin-bottom:12px; }
-.contact-form label span{ display:block; font-weight:600; margin-bottom:6px; }
-.contact-form input, .contact-form textarea{
-  width:100%; padding:12px 12px; border:1px solid #cbd5e1; border-radius:10px; font-size:1rem;
-}
-.contact-form input:focus, .contact-form textarea:focus{ outline:3px solid var(--ring); border-color:var(--brand); }
-.form-note{ color:var(--muted); font-size:.95rem; margin:10px 0 0 0; }
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have a plumbing issue? Send us a message and we’ll get back to you quickly.</p>
+
+  <form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
+    <label>
+      <span>Name</span>
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      <span>Email</span>
+      <input type="email" name="_replyto" required>
+    </label>
+
+    <label>
+      <span>Phone</span>
+      <input type="tel" name="phone" required>
+    </label>
+
+    <label>
+      <span>Message</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit" class="btn btn--primary full">Send Message</button>
+    <p class="form-note">We’ll get back to you as soon as possible.</p>
+  </form>
+</section>
+
 
 /* ========== Footer ==========/ */
 .site-footer{ border-top:1px solid #e2e8f0; background:#fff; }
