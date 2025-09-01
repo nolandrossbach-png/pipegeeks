@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pipe Geeks | Trusted Plumbing in Livingston County</title>
-  <meta name="description" content="Pipe Geeks provides trustworthy, local plumbing services in Livingston County and nearby areas. Leak repairs, drain cleaning, water heaters, and 24/7 emergency plumbing." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipe Geeks | Plumbing in Livingston County</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <div class="logo-mark" aria-hidden="true">🛠️</div>
-        <a class="brand-name" href="#top">Pipe Geeks</a>
+        <span class="logo-mark">🔧</span>
+        <a href="#" class="brand-name">Pipe Geeks</a>
       </div>
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#areas">Areas</a>
-        <a href="#contact" class="btn btn--primary">Request Service</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero" id="top" aria-label="Reliable plumbing in Livingston County">
-    <div class="hero-bg" role="img" aria-label="Plumber working in a home"></div>
+  <section class="hero">
+    <div class="hero-bg"></div>
     <div class="container hero-content">
-      <h1>Reliable Plumbing in <span class="accent">Livingston County</span></h1>
-      <p class="subhead">Trustworthy, local, and here when you need us most.</p>
+      <h1>Your <span class="accent">Trusted Plumber</span> in Livingston County</h1>
+      <p class="subhead">Fast, reliable, and professional plumbing services.</p>
       <div class="cta-row">
-        <a class="btn btn--primary" href="tel:+15551234567">📞 Call Now</a>
-        <a class="btn btn--ghost" href="#contact">Request a Free Quote</a>
-      </div>
-      <div class="trust-row">
-        <div class="badge">✅ Locally Owned</div>
-        <div class="badge">⏱️ Fast Response</div>
-        <div class="badge">🚨 24/7 Emergencies</div>
+        <a href="tel:+1234567890" class="btn btn--primary">📞 Call Now</a>
+        <a href="#contact" class="btn btn--ghost">Request a Free Quote</a>
       </div>
     </div>
   </section>
@@ -49,28 +40,12 @@
   <section id="services" class="section">
     <div class="container">
       <h2 class="section-title">Our Services</h2>
-      <p class="section-lead">Honest, straightforward plumbing for your home.</p>
+      <p class="section-lead">We handle all your plumbing needs with care and precision.</p>
       <div class="grid services-grid">
-        <article class="card service-card">
-          <div class="icon" aria-hidden="true">💧</div>
-          <h3>Leak Repairs</h3>
-          <p>Quick fixes to stop water damage in its tracks.</p>
-        </article>
-        <article class="card service-card">
-          <div class="icon" aria-hidden="true">🌀</div>
-          <h3>Drain Cleaning</h3>
-          <p>Clear clogs and keep water flowing smoothly.</p>
-        </article>
-        <article class="card service-card">
-          <div class="icon" aria-hidden="true">🔥</div>
-          <h3>Water Heaters</h3>
-          <p>Installations and maintenance for reliable hot water.</p>
-        </article>
-        <article class="card service-card">
-          <div class="icon" aria-hidden="true">🚨</div>
-          <h3>Emergency Plumbing</h3>
-          <p>24/7 help when you need it most.</p>
-        </article>
+        <div class="card service-card"><span class="icon">🚰</span> Leak Repairs</div>
+        <div class="card service-card"><span class="icon">🛁</span> Drain Cleaning</div>
+        <div class="card service-card"><span class="icon">🔥</span> Water Heaters</div>
+        <div class="card service-card"><span class="icon">⚡</span> Emergency Plumbing</div>
       </div>
     </div>
   </section>
@@ -80,38 +55,31 @@
     <div class="container about-wrap">
       <div class="about-text">
         <h2 class="section-title">Why Choose Pipe Geeks?</h2>
-        <p class="lead">
-          I started Pipe Geeks with one goal: to bring honest, reliable plumbing to local families.
-          Being a great plumber is about more than fixing pipes — it's about leadership you can count on.
-        </p>
+        <p class="lead">We’re a local business committed to providing professional, honest, and reliable plumbing services.</p>
         <ul class="checklist">
-          <li>Transparent pricing & friendly service</li>
-          <li>Respect for your home — we keep things clean</li>
-          <li>Fully insured & safety-focused</li>
+          <li>✔ Licensed & Insured</li>
+          <li>✔ Transparent Pricing</li>
+          <li>✔ Fast Emergency Service</li>
+          <li>✔ 100% Customer Satisfaction</li>
         </ul>
-        <div class="about-cta">
-          <a class="btn btn--primary" href="tel:+15551234567">Call (555) 123-4567</a>
-          <a class="btn btn--ghost" href="mailto:info@pipegeeks.com">Email Us</a>
-        </div>
       </div>
-      <figure class="about-media">
-        <img src="https://picsum.photos/640/480?blur=0&random=21" alt="Local plumber assisting a homeowner">
-      </figure>
+      <div class="about-media">
+        <img src="https://picsum.photos/500/350?random=5" alt="Plumber at work">
+      </div>
     </div>
   </section>
 
-  <!-- Areas -->
+  <!-- Service Areas -->
   <section id="areas" class="section">
     <div class="container">
-      <h2 class="section-title">Proudly Serving Livingston County & Beyond</h2>
-      <p class="section-lead">Based in Livingston County, and happy to travel to nearby communities.</p>
+      <h2 class="section-title">Areas We Serve</h2>
+      <p class="section-lead">Proudly serving Livingston County and nearby communities.</p>
       <div class="grid area-grid">
         <div class="card area-card">Brighton</div>
         <div class="card area-card">Howell</div>
         <div class="card area-card">Hartland</div>
         <div class="card area-card">Pinckney</div>
         <div class="card area-card">Fowlerville</div>
-        <div class="card area-card">+ Surrounding Areas</div>
       </div>
     </div>
   </section>
@@ -119,42 +87,45 @@
   <!-- Contact -->
   <section id="contact" class="section section--alt">
     <div class="container contact-wrap">
-      <div class="contact-text">
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="lead">Tell us what you need help with. We’ll get back quickly.</p>
+      <div>
+        <h2 class="section-title">Contact Pipe Geeks</h2>
+        <p class="lead">Have a plumbing issue? Send us a message and we’ll get back to you quickly.</p>
         <div class="contact-cards">
-          <a class="contact-card" href="tel:+15551234567">
-            <div class="cc-icon">📞</div>
+          <a href="tel:+1234567890" class="contact-card">
+            <span class="cc-icon">📞</span>
             <div>
               <div class="cc-title">Call Us</div>
-              <div class="cc-sub">(555) 123-4567</div>
+              <div class="cc-sub">+1 (234) 567-890</div>
             </div>
           </a>
-          <a class="contact-card" href="mailto:info@pipegeeks.com">
-            <div class="cc-icon">✉️</div>
+          <a href="mailto:pipegeeks@example.com" class="contact-card">
+            <span class="cc-icon">✉️</span>
             <div>
               <div class="cc-title">Email</div>
-              <div class="cc-sub">info@pipegeeks.com</div>
+              <div class="cc-sub">pipegeeks@example.com</div>
             </div>
           </a>
         </div>
       </div>
-
-      <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thanks! This demo form isn\'t wired up yet.');">
-        <label>
+      <form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
+        <label for="name">
           <span>Name</span>
-          <input type="text" name="name" required />
+          <input type="text" id="name" name="name" required>
         </label>
-        <label>
+        <label for="email">
           <span>Email</span>
-          <input type="email" name="email" required />
+          <input type="email" id="email" name="_replyto" required>
         </label>
-        <label class="wide">
-          <span>How can we help?</span>
-          <textarea name="message" rows="6" required></textarea>
+        <label for="phone">
+          <span>Phone</span>
+          <input type="tel" id="phone" name="phone" required>
+        </label>
+        <label for="message">
+          <span>Message</span>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </label>
         <button type="submit" class="btn btn--primary full">Send Message</button>
-        <p class="form-note">Want instant contact? Call us at <a href="tel:+15551234567">(555) 123-4567</a>.</p>
+        <p class="form-note">We’ll get back to you as soon as possible.</p>
       </form>
     </div>
   </section>
@@ -163,11 +134,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="logo-mark" aria-hidden="true">🛠️</div>
-        <div>
-          <strong>Pipe Geeks</strong><br/>
-          Livingston County, MI
-        </div>
+        <span class="logo-mark">🔧</span> Pipe Geeks
       </div>
       <div class="footer-links">
         <a href="#services">Services</a>
@@ -175,9 +142,7 @@
         <a href="#areas">Areas</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-legal">
-        © 2025 Pipe Geeks. All rights reserved.
-      </div>
+      <div class="footer-legal">© 2025 Pipe Geeks</div>
     </div>
   </footer>
 </body>

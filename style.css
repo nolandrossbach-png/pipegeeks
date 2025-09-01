@@ -103,35 +103,6 @@ img{ max-width:100%; display:block; }
 .about-media img{ border-radius:16px; box-shadow: 0 10px 24px rgba(2,6,23,0.15); }
 
 /* ========== Contact ==========/ */
-<section id="contact" class="contact-wrap">
-  <h2>Contact Pipe Geeks</h2>
-  <p>Have a plumbing issue? Send us a message and we’ll get back to you quickly.</p>
-
-  <form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
-    <label for="name">
-      <span>Name</span>
-      <input type="text" id="name" name="name" required>
-    </label>
-
-    <label for="email">
-      <span>Email</span>
-      <input type="email" id="email" name="_replyto" required>
-    </label>
-
-    <label for="phone">
-      <span>Phone</span>
-      <input type="tel" id="phone" name="phone" required>
-    </label>
-
-    <label for="message">
-      <span>Message</span>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </label>
-
-    <button type="submit" class="btn btn--primary full">Send Message</button>
-    <p class="form-note">We’ll get back to you as soon as possible.</p>
-  </form>
-</section>
 
 
 
