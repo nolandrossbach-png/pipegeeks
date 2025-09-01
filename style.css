@@ -103,46 +103,36 @@ img{ max-width:100%; display:block; }
 .about-media img{ border-radius:16px; box-shadow: 0 10px 24px rgba(2,6,23,0.15); }
 
 /* ========== Contact ==========/ */
-.contact-wrap{ display:grid; grid-template-columns: .9fr 1.1fr; gap:24px; align-items:start; }
-.contact-cards{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:10px; }
-.contact-card{
-  display:flex; align-items:center; gap:12px; padding:14px; border:1px solid #e2e8f0; border-radius:12px;
-  text-decoration:none; color:inherit; background:#fff;
-}
-.contact-card:hover{ outline: 3px solid var(--ring); }
-.cc-icon{ font-size:22px; }
-.cc-title{ font-weight:700; }
-.cc-sub{ color:var(--muted); }
-
-<section id="contact">
-  <h2>Contact Us</h2>
+<section id="contact" class="contact-wrap">
+  <h2>Contact Pipe Geeks</h2>
   <p>Have a plumbing issue? Send us a message and we’ll get back to you quickly.</p>
 
   <form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
-    <label>
+    <label for="name">
       <span>Name</span>
-      <input type="text" name="name" required>
+      <input type="text" id="name" name="name" required>
     </label>
 
-    <label>
+    <label for="email">
       <span>Email</span>
-      <input type="email" name="_replyto" required>
+      <input type="email" id="email" name="_replyto" required>
     </label>
 
-    <label>
+    <label for="phone">
       <span>Phone</span>
-      <input type="tel" name="phone" required>
+      <input type="tel" id="phone" name="phone" required>
     </label>
 
-    <label>
+    <label for="message">
       <span>Message</span>
-      <textarea name="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
     </label>
 
     <button type="submit" class="btn btn--primary full">Send Message</button>
     <p class="form-note">We’ll get back to you as soon as possible.</p>
   </form>
 </section>
+
 
 
 /* ========== Footer ==========/ */
