@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pipe Geeks | Plumbing in Livingston County</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Fast, reliable plumbing services in Livingston County. Leak repairs, drain cleaning, water heaters, and emergency plumbing." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
 </head>
 <body>
   <!-- Header -->
@@ -27,11 +29,16 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="container hero-content">
-      <h1>Your <span class="accent">Trusted Plumber</span> in Livingston County</h1>
-      <p class="subhead">Fast, reliable, and professional plumbing services.</p>
+      <h1>Livingston County’s <span class="accent">Trusted Plumbers</span></h1>
+      <p class="subhead">Same-day service. Upfront pricing. Licensed & insured pros.</p>
       <div class="cta-row">
         <a href="tel:+1234567890" class="btn btn--primary">📞 Call Now</a>
-        <a href="#contact" class="btn btn--ghost">Request a Free Quote</a>
+        <a href="#contact" class="btn btn--ghost">Get a Free Quote</a>
+      </div>
+      <div class="trust-row">
+        <span class="badge">24/7 Emergencies</span>
+        <span class="badge">5-Star Local Service</span>
+        <span class="badge">100% Satisfaction</span>
       </div>
     </div>
   </section>
@@ -40,12 +47,14 @@
   <section id="services" class="section">
     <div class="container">
       <h2 class="section-title">Our Services</h2>
-      <p class="section-lead">We handle all your plumbing needs with care and precision.</p>
+      <p class="section-lead">From quick fixes to major installs, we’ve got your plumbing covered.</p>
       <div class="grid services-grid">
-        <div class="card service-card"><span class="icon">🚰</span> Leak Repairs</div>
-        <div class="card service-card"><span class="icon">🛁</span> Drain Cleaning</div>
-        <div class="card service-card"><span class="icon">🔥</span> Water Heaters</div>
-        <div class="card service-card"><span class="icon">⚡</span> Emergency Plumbing</div>
+        <div class="card service-card"><span class="icon">🚰</span><b>Leak Repairs</b><p>Pinpoint and fix leaks fast before damage spreads.</p></div>
+        <div class="card service-card"><span class="icon">🛁</span><b>Drain Cleaning</b><p>Clogs cleared with pro-grade equipment.</p></div>
+        <div class="card service-card"><span class="icon">🔥</span><b>Water Heaters</b><p>Repair, replace, and tankless upgrades.</p></div>
+        <div class="card service-card"><span class="icon">🚿</span><b>Fixtures</b><p>Faucets, toilets, showers, disposals.</p></div>
+        <div class="card service-card"><span class="icon">🧯</span><b>Emergency</b><p>On-call when you need us most.</p></div>
+        <div class="card service-card"><span class="icon">🏠</span><b>Whole Home</b><p>Repipes, sump pumps, backflow.</p></div>
       </div>
     </div>
   </section>
@@ -55,16 +64,17 @@
     <div class="container about-wrap">
       <div class="about-text">
         <h2 class="section-title">Why Choose Pipe Geeks?</h2>
-        <p class="lead">We’re a local business committed to providing professional, honest, and reliable plumbing services.</p>
+        <p class="lead">We’re a local small business—fast to respond, honest in our pricing, and obsessed with clean, professional workmanship.</p>
         <ul class="checklist">
           <li>✔ Licensed & Insured</li>
-          <li>✔ Transparent Pricing</li>
-          <li>✔ Fast Emergency Service</li>
-          <li>✔ 100% Customer Satisfaction</li>
+          <li>✔ Upfront, transparent pricing</li>
+          <li>✔ Respect for your home—shoe covers & clean workspace</li>
+          <li>✔ Friendly, on-time technicians</li>
         </ul>
+        <a href="#contact" class="btn btn--primary">Get My Free Quote</a>
       </div>
       <div class="about-media">
-        <img src="https://picsum.photos/500/350?random=5" alt="Plumber at work">
+        <img src="https://images.unsplash.com/photo-1582560475093-7e23c5c1a8a0?q=80&w=1200&auto=format&fit=crop" alt="Professional plumber working under a sink" />
       </div>
     </div>
   </section>
@@ -80,6 +90,7 @@
         <div class="card area-card">Hartland</div>
         <div class="card area-card">Pinckney</div>
         <div class="card area-card">Fowlerville</div>
+        <div class="card area-card">Whitmore Lake</div>
       </div>
     </div>
   </section>
@@ -89,27 +100,43 @@
     <div class="container contact-wrap">
       <div>
         <h2 class="section-title">Contact Pipe Geeks</h2>
-        <p class="lead">Have a plumbing issue? Send us a message and we’ll get back to you quickly.</p>
+        <p class="lead">Describe your issue and we’ll get back to you fast.</p>
+        <div class="contact-cards">
+          <a href="tel:+1234567890" class="contact-card">
+            <span class="cc-icon">📞</span>
+            <div>
+              <div class="cc-title">Call Us</div>
+              <div class="cc-sub">+1 (234) 567-890</div>
+            </div>
+          </a>
+          <a href="mailto:pipegeeks@example.com" class="contact-card">
+            <span class="cc-icon">✉️</span>
+            <div>
+              <div class="cc-title">Email</div>
+              <div class="cc-sub">pipegeeks@example.com</div>
+            </div>
+          </a>
+        </div>
       </div>
       <form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
         <label for="name">
           <span>Name</span>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required />
         </label>
         <label for="email">
           <span>Email</span>
-          <input type="email" id="email" name="_replyto" required>
+          <input type="email" id="email" name="_replyto" required />
         </label>
         <label for="phone">
           <span>Phone</span>
-          <input type="tel" id="phone" name="phone" required>
+          <input type="tel" id="phone" name="phone" required />
         </label>
         <label for="message">
           <span>Message</span>
           <textarea id="message" name="message" rows="5" required></textarea>
         </label>
         <button type="submit" class="btn btn--primary full">Send Message</button>
-        <p class="form-note">We’ll get back to you as soon as possible.</p>
+        <p class="form-note">We’ll get back to you ASAP.</p>
       </form>
     </div>
   </section>
@@ -129,5 +156,8 @@
       <div class="footer-legal">© 2025 Pipe Geeks</div>
     </div>
   </footer>
+
+  <!-- Mobile sticky call button -->
+  <a href="tel:+1234567890" class="sticky-call">Call Now</a>
 </body>
 </html>
