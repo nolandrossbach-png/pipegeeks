@@ -166,6 +166,32 @@ img{ max-width:100%; display:block; }
   font-size: .95rem;
   margin: 10px 0 0 0;
 }
+<form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
+  <label for="name">
+    <span>Name</span>
+    <input type="text" id="name" name="name" required>
+  </label>
+
+  <label for="email">
+    <span>Email</span>
+    <input type="email" id="email" name="_replyto" required>
+  </label>
+
+  <label for="phone">
+    <span>Phone</span>
+    <input type="tel" id="phone" name="phone" required>
+  </label>
+
+  <label for="message">
+    <span>Message</span>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </label>
+
+  <!-- ✅ This is the actual send button -->
+  <button type="submit" class="btn btn--primary full">Send Message</button>
+
+  <p class="form-note">We’ll get back to you as soon as possible.</p>
+</form>
 
 
 
