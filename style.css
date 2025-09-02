@@ -103,46 +103,59 @@ img{ max-width:100%; display:block; }
 .about-media img{ border-radius:16px; box-shadow: 0 10px 24px rgba(2,6,23,0.15); }
 
 /* ========== Contact ==========/ */
-.contact-wrap {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 24px;
-  align-items: start;
-}
+<section id="contact" class="section section--alt">
+  <div class="container contact-wrap">
+    <div>
+      <h2 class="section-title">Contact Pipe Geeks</h2>
+      <p class="lead">Have a plumbing issue? Send us a message and we’ll get back to you quickly.</p>
 
-.contact-form {
-  background: #fff;
-  padding: 18px;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-}
+      <div class="contact-cards">
+        <a href="tel:+1234567890" class="contact-card">
+          <span class="cc-icon">📞</span>
+          <div>
+            <div class="cc-title">Call Us</div>
+            <div class="cc-sub">+1 (234) 567-890</div>
+          </div>
+        </a>
+        <a href="mailto:pipegeeks@example.com" class="contact-card">
+          <span class="cc-icon">✉️</span>
+          <div>
+            <div class="cc-title">Email</div>
+            <div class="cc-sub">pipegeeks@example.com</div>
+          </div>
+        </a>
+      </div>
+    </div>
 
-.contact-form label {
-  display: block;
-  margin-bottom: 12px;
-}
+    <!-- ✅ Working Form -->
+    <form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
+      <label for="name">
+        <span>Name</span>
+        <input type="text" id="name" name="name" required>
+      </label>
 
-.contact-form label span {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
+      <label for="email">
+        <span>Email</span>
+        <input type="email" id="email" name="_replyto" required>
+      </label>
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 12px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  font-size: 1rem;
-}
+      <label for="phone">
+        <span>Phone</span>
+        <input type="tel" id="phone" name="phone" required>
+      </label>
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 3px solid var(--ring);
-  border-color: var(--brand);
-}
+      <label for="message">
+        <span>Message</span>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </label>
 
+      <!-- 🔵 This is your visible send button -->
+      <button type="submit" class="btn btn--primary full">Send Message</button>
+
+      <p class="form-note">We’ll get back to you as soon as possible.</p>
+    </form>
+  </div>
+</section>
 .contact-form button {
   display: block;
   margin-top: 12px;
@@ -161,51 +174,6 @@ img{ max-width:100%; display:block; }
   background: var(--brand-600);
 }
 
-.form-note {
-  color: var(--muted);
-  font-size: .95rem;
-  margin: 10px 0 0 0;
-}
-<form action="https://formspree.io/f/xeolzblo" method="POST" class="contact-form">
-  <label for="name">
-    <span>Name</span>
-    <input type="text" id="name" name="name" required>
-  </label>
-
-  <label for="email">
-    <span>Email</span>
-    <input type="email" id="email" name="_replyto" required>
-  </label>
-
-  <label for="phone">
-    <span>Phone</span>
-    <input type="tel" id="phone" name="phone" required>
-  </label>
-
-  <label for="message">
-    <span>Message</span>
-    <textarea id="message" name="message" rows="5" required></textarea>
-  </label>
-.contact-form button {
-  display: block;
-  margin-top: 12px;
-  width: 100%;
-  background: var(--brand);
-  color: #fff;
-  font-weight: 700;
-  border: none;
-  padding: 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out;
-}
-
-.contact-form button:hover {
-  background: var(--brand-600);
-}
-
-  <p class="form-note">We’ll get back to you as soon as possible.</p>
-</form>
 
 
 
