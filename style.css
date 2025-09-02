@@ -186,9 +186,23 @@ img{ max-width:100%; display:block; }
     <span>Message</span>
     <textarea id="message" name="message" rows="5" required></textarea>
   </label>
+.contact-form button {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
 
-  <!-- ✅ This is the actual send button -->
-  <button type="submit" class="btn btn--primary full">Send Message</button>
+.contact-form button:hover {
+  background: var(--brand-600);
+}
 
   <p class="form-note">We’ll get back to you as soon as possible.</p>
 </form>
